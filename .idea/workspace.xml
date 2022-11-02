@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="817a135e-89fc-4e17-97da-c6396ee08bea" name="Changes" comment="First">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/maven.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/maven.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Starter/CucumberTestSuite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Starter/CucumberTestRun.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +54,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CucumberTestSuite (1)">
+  <component name="RunManager" selected="JUnit.CucumberTestRun">
     <configuration name="Scenario: Register with invalid body data" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Authentication/Register.feature" />
@@ -78,7 +79,7 @@
       <module name="MiniProject-API" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Starter.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -89,16 +90,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CucumberTestSuite (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CucumberTestRun" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MiniProject-API" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Starter.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Starter" />
-      <option name="MAIN_CLASS_NAME" value="Starter.CucumberTestSuite" />
+      <option name="MAIN_CLASS_NAME" value="Starter.CucumberTestRun" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -115,7 +116,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CucumberTestSuite (1)" />
+        <item itemvalue="JUnit.CucumberTestRun" />
         <item itemvalue="JUnit.CucumberTestRun" />
         <item itemvalue="JUnit.CucumberTestSuite" />
         <item itemvalue="Cucumber Java.Scenario: Register with invalid body data" />
@@ -155,5 +156,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First" />
     <option name="LAST_COMMIT_MESSAGE" value="First" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/MiniProject_API$CucumberTestRun.ic" NAME="CucumberTestRun Coverage Results" MODIFIED="1667364119409" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>.*</FILTER>
+    </SUITE>
   </component>
 </project>
