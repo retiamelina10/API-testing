@@ -9,7 +9,7 @@ public class Delete {
     public Long setUrlDeleteProduct() {
         url = "https://alta-shop.herokuapp.com/api/products";
         given().when().get(url);
-        id = lastResponse().body().path("[9].id");
+        id = lastResponse().body().path("[14].id");
         return id;
     }
 

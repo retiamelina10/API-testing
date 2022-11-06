@@ -2,25 +2,36 @@ package Starter.Project;
 
 import org.json.simple.JSONObject;
 
+import java.util.LinkedList;
+import java.util.List;
+
 import static net.serenitybdd.rest.SerenityRest.given;
 import static net.serenitybdd.rest.SerenityRest.then;
 
 public class Register {
     private String url;
     private JSONObject body = new JSONObject();
+    List<JSONObject> data = new LinkedList<>();
     public void setUrlRegiseter() {
         url = "https://alta-shop.herokuapp.com/api/auth/register";
     }
 
     public void validBodyData() {
+<<<<<<< HEAD
         body.put("email", "retiamelina28@gmail.com");
+=======
+        List<String> category = new LinkedList<>();
+        body.put("email", "retiamelina99@gmail.com");
+>>>>>>> 781f4ba4c09c84d7fc9f579cf5ac1e5cf0031b7a
         body.put("password","Retiaah10");
         body.put("full name", "Retia MElina");
+        data.add(body);
     }
 
     public void requestToregisterWithValidData() {
         given().header("content-type", "application/json")
                 .body(body.toJSONString())
+                .body(data)
                 .when().post(url);
     }
 
