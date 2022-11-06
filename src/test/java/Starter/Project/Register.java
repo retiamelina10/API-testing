@@ -13,7 +13,7 @@ public class Register {
     }
 
     public void validBodyData() {
-        body.put("email", "retiamelina10@gmail.com");
+        body.put("email", "retiamelina28@gmail.com");
         body.put("password","Retiaah10");
         body.put("full name", "Retia MElina");
     }
