@@ -36,9 +36,6 @@ public class RegisterStepdefs {
         register.setEmailAndPassword();
         register.setEmailAndFullname();
         register.setPasswordAndFullname();
-        register.setFullname();
-        register.setPassword();
-        register.setEmail();
     }
 
     @When("I request to register with invalid body")
@@ -49,10 +46,6 @@ public class RegisterStepdefs {
     @Then("I get status code 400")
     public void iGetStatusCode400() {
         register.getStatusCode400();
-    }
-
-    @And("I set {string}, {string}, and {string}")
-    public void iSetAnd(String arg0, String arg1, String arg2) {
     }
 
     @And("I set email and password")
