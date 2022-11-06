@@ -12,13 +12,7 @@ on:
   push:
     branches: [ "master", "develop"]
   pull_request:
-<<<<<<< HEAD
     branches: [ "master", "develop"]
-
-
-=======
-    branches: [ "master"]
->>>>>>> 781f4ba4c09c84d7fc9f579cf5ac1e5cf0031b7a
 
 jobs:
   build:
