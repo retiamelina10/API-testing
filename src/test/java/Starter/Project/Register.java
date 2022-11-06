@@ -17,6 +17,7 @@ public class Register {
     }
 
     public void validBodyData() {
+        body.put("email", "retiamelina28@gmail.com");
         List<String> category = new LinkedList<>();
         body.put("email", "retiamelina99@gmail.com");
         body.put("password","Retiaah10");
