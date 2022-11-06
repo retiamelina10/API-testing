@@ -10,15 +10,11 @@ name: Java CI with Maven (API Project)
 
 on:
   push:
-<<<<<<< HEAD
     branches: [ "master", "develop"]
   pull_request:
     branches: [ "master", "develop"]
-=======
-    branches: [ "master" , "develop" ]
-  pull_request:
-    branches: [ "master" , "develop"]
->>>>>>> 9a5bc9553905d99c6f114b4c5e25977653ee0824
+
+
 
 jobs:
   build:
