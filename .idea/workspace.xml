@@ -6,8 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="0b41c0da-5aea-4e88-8643-5129f08e9dd9" name="Changes" comment="First">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Starter/Project/Delete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Starter/Project/Delete.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Starter/Project/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Starter/Project/Register.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Starter/stepdefinition/RegisterStepdefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Starter/stepdefinition/RegisterStepdefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Authentication/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Authentication/Login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Products/DELETE.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Products/DELETE.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
