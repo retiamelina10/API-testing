@@ -82,4 +82,8 @@ public class RegisterStepdefs {
     public void iSetFullName() {
         register.setFullname();
     }
+
+    @And("I set {string}, {string}, and {string}")
+    public void iSetAnd(String arg0, String arg1, String arg2) {
+    }
 }
