@@ -5,7 +5,6 @@ import static net.serenitybdd.rest.SerenityRest.*;
 public class GetProductByID {
     private String url;
     private Long id;
-    private String retia;
 
     public Long setUrlGetProductAndVAlidID() {
         url = "https://alta-shop.herokuapp.com/api/products";

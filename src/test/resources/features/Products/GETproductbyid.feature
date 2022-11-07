@@ -6,7 +6,7 @@ Feature: Get product by id
   Scenario: Get product by valid id
     Given I set url get product and valid id
     When I request get product
-    Then I get status code 400
+    Then I get status code 200
 
   Scenario: Get product with invalid id
     Given I set url get product and invalid id
