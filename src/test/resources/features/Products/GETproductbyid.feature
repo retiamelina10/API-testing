@@ -21,7 +21,7 @@ Feature: Get product by id
   Scenario: Get product with char id
     Given I set url get product and char is
     When i request get product with char id
-    Then I get status code 200
+    Then I get status code 400
 
     Scenario: Get product with boolean id
       Given I set url get product and boolean id
