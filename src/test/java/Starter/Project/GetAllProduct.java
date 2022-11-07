@@ -22,4 +22,8 @@ public class GetAllProduct {
         token = "ZWxpbmExMEBnbWFpbC5jb20ifQ.KH8ilSjFvxM320Hh4R-EEP5fIK_BbD1q71pSk7gYeS8";
 
     }
+
+    public void validateListProduct() {
+        then().body(equalTo("list"));
+    }
 }

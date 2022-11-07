@@ -7,6 +7,7 @@ import java.util.List;
 
 import static net.serenitybdd.rest.SerenityRest.given;
 import static net.serenitybdd.rest.SerenityRest.then;
+import static org.hamcrest.Matchers.equalTo;
 
 public class Register {
     private String url;
@@ -15,66 +16,43 @@ public class Register {
     public void setUrlRegiseter() {
         url = "https://alta-shop.herokuapp.com/api/auth/register";
     }
-
-    public void validBodyData() {
-        body.put("email", "retiamelina28@gmail.com");
-        List<String> category = new LinkedList<>();
-        body.put("email", "retiamelina99@gmail.com");
-        body.put("password","Retiaah10");
-        body.put("full name", "Retia MElina");
+    public void setBodyData(String name, String email, String password) {
+        List<Integer> category = new LinkedList<>();
+        body.put("full name", name);
+        body.put("email", email);
+        body.put("password", password);
+        category.add(2);
+        category.add(5);
         data.add(body);
-    }
-
-    public void requestToregisterWithValidData() {
-        given().header("content-type", "application/json")
-                .body(body.toJSONString())
-                .body(data)
-                .when().post(url);
-    }
-
-    public void getStatusCode200() {
-        then().statusCode(200);
-    }
-
-    public void requestToRegisterWithInvalidBody() {
-        given().header("content-type", "application/json")
-                .body(body.toJSONString())
-                .when().post(url);
-    }
-
-    public void getStatusCode400() {
-        then().statusCode(400);
-    }
-
-    public void setEmailAndPassword() {
-        body.put("email","retiamelina10@gmail.com");
     }
 
     public void requestToRegister() {
         given().header("content-type", "application/json")
-                .body(body.toJSONString())
+                .body(body)
                 .when().post(url);
     }
 
-    public void setPasswordAndFullname() {
-        body.put("password","Retiaah10");
-        body.put("full name", "Retia MElina");
+    public void successRegister() {
+        then().statusCode(200);
     }
 
-    public void setEmailAndFullname() {
-        body.put("email", "retiamelina10@gmail.com");
-        body.put("full name", "Retia MElina");
+    public void getBadRequestResponse() {
+        then().statusCode(400);
     }
 
-    public void setEmail() {
-        body.put("email", "retiamelina10@gmail.com");
+    public void validateSuccessRegister() {
+        then().body(equalTo("body data"));
     }
 
-    public void setPassword() {
-        body.put("password","Retiaah10");
+    public void errorMessageEmail() {
+        then().body(equalTo("error email is required"));
     }
 
-    public void setFullname() {
-        body.put("full name", "Retia MElina");
+    public void errorMessagePassword() {
+        then().body(equalTo("error password is required"));
+    }
+
+    public void errorMessageName() {
+        then().body(equalTo("error name"));
     }
 }

@@ -6,4 +6,4 @@ Feature: Delete product
   Scenario: delete product
     Given I set url delete product
     When I request delete product
-    Then I get status code 400
+    Then I get status code 200

@@ -3,6 +3,7 @@ package Starter.Project;
 import org.json.simple.JSONObject;
 
 import static net.serenitybdd.rest.SerenityRest.given;
+import static net.serenitybdd.rest.SerenityRest.then;
 
 public class Login {
     private String url;
@@ -35,5 +36,9 @@ public class Login {
         given().header("content-type", "application/json")
                 .body(body.toJSONString())
                 .when().post(url);
+    }
+
+    public void getStatusCode400() {
+        then().statusCode(400);
     }
 }

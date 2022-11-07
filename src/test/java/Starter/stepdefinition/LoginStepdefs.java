@@ -3,6 +3,7 @@ package Starter.stepdefinition;
 import Starter.Project.Login;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import net.thucydides.core.annotations.Steps;
 
@@ -37,5 +38,10 @@ public class LoginStepdefs {
     @When("I request to login with invalid body")
     public void iRequestToLoginWithInvalidBody() {
         login.requestToLoginWitInvalidBody();
+    }
+
+    @Then("I get status code 400")
+    public void iGetStatusCode400() {
+        login.getStatusCode400();
     }
 }
